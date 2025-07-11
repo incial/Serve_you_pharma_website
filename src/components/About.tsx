@@ -5,16 +5,16 @@ import { Target, Eye, Shield } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-12 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="space-y-6"
           >
             <div className="text-center lg:text-left">
               <span className="text-green-500 font-semibold text-sm uppercase tracking-wider">About Us</span>
@@ -29,7 +29,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               <div className="flex items-start space-x-4">
                 <Target className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
                 <div>
@@ -79,7 +79,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-16 text-center max-w-4xl mx-auto"
+          className="mt-10 text-center max-w-4xl mx-auto"
         >
           <p className="text-lg text-gray-600 leading-relaxed">
             Serve You Pharma is a trusted pharmaceutical wholesaler supplying quality medicines to pharmacies, hospitals, 
