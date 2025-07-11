@@ -51,22 +51,15 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Contact Information */}
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="space-y-6"
           >
             <div className="grid gap-4 text-center lg:text-left">
               {contactInfo.map((info, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
-                  viewport={{ once: true }}
-                  className="flex flex-col lg:flex-row items-center lg:items-start space-y-2 lg:space-y-0 lg:space-x-4"
-                >
+                <div key={index} className="flex flex-col lg:flex-row items-center lg:items-start space-y-2 lg:space-y-0 lg:space-x-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <info.icon className="w-6 h-6 text-green-500" />
                   </div>
@@ -76,18 +69,12 @@ const Contact = () => {
                       <p key={detailIndex} className="text-gray-600">{detail}</p>
                     ))}
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
             {/* Social Links */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              viewport={{ once: true }}
-              className="text-center lg:text-left"
-            >
+            <div className="text-center lg:text-left">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Follow Us</h3>
               <div className="flex justify-center lg:justify-start space-x-4">
                 {socialLinks.map((social, index) => (
@@ -101,7 +88,7 @@ const Contact = () => {
                   </a>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Google Maps */}

@@ -109,9 +109,9 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="fixed inset-0 bg-gradient-to-br from-green-500 to-green-600 z-50 md:hidden"
+              className="fixed top-0 left-0 right-0 bg-gradient-to-br from-green-500 to-green-600 z-50 md:hidden"
             >
-              <div className="flex flex-col h-screen">
+              <div className="flex flex-col min-h-screen">
                 {/* Header with close button */}
                 <div className="flex items-center justify-between p-4 pt-16">
                   <div className="flex items-center space-x-2">
@@ -137,8 +137,8 @@ const Header = () => {
                   {menuItems.map((item, index) => (
                     <motion.button
                       key={item.name}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.1 + 0.2 }}
                       onClick={() => handleMenuClick(item.href)}
                       className="text-white text-2xl font-medium hover:text-green-100 transition-colors duration-200 w-full text-center py-3"
