@@ -97,11 +97,12 @@ const Header = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-gradient-to-br from-green-500 to-green-600 z-40 md:hidden"
+            className="fixed inset-0 top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-br from-green-500 to-green-600 z-40 md:hidden"
+            style={{ minHeight: '100vh', minWidth: '100vw' }}
           >
-            <div className="flex flex-col h-full">
+            <div className="flex flex-col h-full w-full">
               {/* Header with logo and close button */}
-              <div className="flex items-center justify-between p-4 pt-16">
+              <div className="flex items-center justify-between p-4 pt-4 mt-12">
                 <div className="flex items-center space-x-2">
                   <img 
                     src="/lovable-uploads/281ba982-2dc8-4315-aae3-5c79a50e15da.png" 
@@ -120,7 +121,7 @@ const Header = () => {
               </div>
 
               {/* Navigation Links */}
-              <div className="flex-1 flex flex-col justify-center px-8 space-y-8">
+              <div className="flex-1 flex flex-col justify-center items-center px-8 space-y-8">
                 {menuItems.map((item, index) => (
                   <motion.button
                     key={item.name}
@@ -128,7 +129,7 @@ const Header = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 + 0.2 }}
                     onClick={() => handleMenuClick(item.href)}
-                    className="text-white text-2xl font-medium hover:text-green-100 transition-colors duration-200 text-center py-4"
+                    className="text-white text-2xl font-medium hover:text-green-100 transition-colors duration-200 text-center py-4 w-full"
                   >
                     {item.name}
                   </motion.button>
@@ -139,7 +140,7 @@ const Header = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.7 }}
-                  className="pt-8 flex justify-center"
+                  className="pt-8 flex justify-center w-full"
                 >
                   <Button 
                     onClick={() => handleMenuClick('#contact')}
