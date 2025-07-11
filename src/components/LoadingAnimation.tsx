@@ -16,7 +16,7 @@ const LoadingAnimation = () => {
           transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
           className="mb-4"
         >
-          <Pill className="w-16 h-16 text-green-500 mx-auto" />
+          <Pill className="w-16 h-16 text-blue-500 mx-auto" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0.5 }}

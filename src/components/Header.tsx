@@ -44,7 +44,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-green-500 transition-colors duration-200"
+                className="text-gray-600 hover:text-blue-500 transition-colors duration-200"
               >
                 {item.name}
               </a>
@@ -53,7 +53,7 @@ const Header = () => {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-green-500 hover:bg-green-600 text-white">
+            <Button className="bg-blue-500 hover:bg-blue-600 text-white">
               Contact Us
             </Button>
           </div>
@@ -97,7 +97,7 @@ const Header = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-br from-green-500 to-green-600 z-40 md:hidden"
+            className="fixed inset-0 top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 z-40 md:hidden"
             style={{ minHeight: '100vh', minWidth: '100vw' }}
           >
             <div className="flex flex-col h-full w-full">
@@ -122,7 +122,7 @@ const Header = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 + 0.2 }}
                     onClick={() => handleMenuClick(item.href)}
-                    className="text-white text-2xl font-medium hover:text-green-100 transition-colors duration-200 text-center py-4 w-full"
+                    className="text-white text-2xl font-medium hover:text-blue-100 transition-colors duration-200 text-center py-4 w-full"
                   >
                     {item.name}
                   </motion.button>
@@ -137,7 +137,7 @@ const Header = () => {
                 >
                   <Button 
                     onClick={() => handleMenuClick('#contact')}
-                    className="bg-white text-green-600 hover:bg-green-50 px-8 py-3 text-lg font-medium"
+                    className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg font-medium"
                   >
                     Contact Us
                   </Button>

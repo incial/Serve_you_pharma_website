@@ -38,7 +38,7 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center mb-6"
         >
-          <span className="text-green-500 font-semibold text-sm uppercase tracking-wider">Testimonials</span>
+          <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider">Testimonials</span>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-2 mb-4">
             This User Opinion Highlights Our Consistent Product Quality
           </h2>
@@ -54,7 +54,7 @@ const Testimonials = () => {
               viewport={{ once: true }}
               className="bg-gray-50 rounded-xl p-6 relative"
             >
-              <Quote className="w-8 h-8 text-green-500 mb-4" />
+              <Quote className="w-8 h-8 text-blue-500 mb-4" />
               
               <p className="text-gray-600 mb-6 leading-relaxed">
                 "{testimonial.text}"

@@ -39,7 +39,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-8"
         >
-          <span className="text-green-500 font-semibold text-sm uppercase tracking-wider">Contact Us</span>
+          <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider">Contact Us</span>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-2 mb-4">
             Communicate with Us
           </h2>
@@ -60,8 +60,8 @@ const Contact = () => {
             <div className="grid gap-4 text-center lg:text-left">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex flex-col lg:flex-row items-center lg:items-start space-y-2 lg:space-y-0 lg:space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <info.icon className="w-6 h-6 text-green-500" />
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <info.icon className="w-6 h-6 text-blue-500" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">{info.title}</h3>
@@ -82,7 +82,7 @@ const Contact = () => {
                     key={index}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-10 h-10 bg-white rounded-lg shadow-sm flex items-center justify-center text-gray-600 hover:text-green-500 hover:shadow-md transition-all duration-200"
+                    className="w-10 h-10 bg-white rounded-lg shadow-sm flex items-center justify-center text-gray-600 hover:text-blue-500 hover:shadow-md transition-all duration-200"
                   >
                     <social.icon className="w-5 h-5" />
                   </a>

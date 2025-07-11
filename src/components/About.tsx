@@ -17,21 +17,21 @@ const About = () => {
             className="space-y-6"
           >
             <div className="text-center lg:text-left">
-              <span className="text-green-500 font-semibold text-sm uppercase tracking-wider">About Us</span>
+              <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider">About Us</span>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-2">
                 What We're All About
               </h2>
             </div>
 
             <div className="flex items-center justify-center lg:justify-start">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                <Shield className="w-8 h-8 text-green-500" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                <Shield className="w-8 h-8 text-blue-500" />
               </div>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-start space-x-4">
-                <Target className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                <Target className="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Mission</h3>
                   <p className="text-gray-600">
@@ -41,7 +41,7 @@ const About = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <Eye className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                <Eye className="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Vision</h3>
                   <p className="text-gray-600">
@@ -68,7 +68,7 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-green-900/20 to-transparent rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-2xl"></div>
             </div>
           </motion.div>
         </div>

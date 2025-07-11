@@ -79,7 +79,7 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="text-green-500 font-semibold text-sm uppercase tracking-wider">Our Services</span>
+          <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider">Our Services</span>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-2 mb-4">
             Discover the Solutions We Offer
           </h2>
@@ -108,8 +108,8 @@ const Services = () => {
                   </div>
                   <div className="p-6">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                        <service.icon className="w-6 h-6 text-green-500" />
+                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                        <service.icon className="w-6 h-6 text-blue-500" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
                     </div>
@@ -124,13 +124,13 @@ const Services = () => {
           {loaded && instanceRef.current && (
             <>
               <button
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-green-500 transition-colors z-10"
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-blue-500 transition-colors z-10"
                 onClick={() => instanceRef.current?.prev()}
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-green-500 transition-colors z-10"
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-blue-500 transition-colors z-10"
                 onClick={() => instanceRef.current?.next()}
               >
                 <ChevronRight className="w-5 h-5" />
@@ -145,7 +145,7 @@ const Services = () => {
                 <button
                   key={idx}
                   className={`w-3 h-3 rounded-full transition-colors ${
-                    currentSlide === idx ? 'bg-green-500' : 'bg-gray-300'
+                    currentSlide === idx ? 'bg-blue-500' : 'bg-gray-300'
                   }`}
                   onClick={() => instanceRef.current?.moveToIdx(idx)}
                 />

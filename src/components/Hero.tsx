@@ -20,7 +20,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="pt-20 pb-12 bg-gradient-to-br from-green-50 to-white">
+    <section id="home" className="pt-20 pb-12 bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -32,7 +32,7 @@ const Hero = () => {
           >
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Trusted by{' '}
-              <span className="text-green-500">Pharmacies</span>{' '}
+              <span className="text-blue-500">Pharmacies</span>{' '}
               for Consistent Supply
             </h1>
 
@@ -44,7 +44,7 @@ const Hero = () => {
             <div className="hidden lg:flex justify-start">
               <Button 
                 size="lg" 
-                className="bg-green-500 hover:bg-green-600 text-white"
+                className="bg-blue-500 hover:bg-blue-600 text-white"
                 onClick={handleContactClick}
               >
                 Contact Us
@@ -61,7 +61,7 @@ const Hero = () => {
           >
             <div className="relative">
               {/* Doctor Image Circle */}
-              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center overflow-hidden">
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-100 to-blue-100 flex items-center justify-center overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face"
                   alt="Professional Pharmacist"
@@ -78,7 +78,7 @@ const Hero = () => {
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                   className={`absolute ${badge.position} bg-white rounded-lg shadow-lg p-3 flex items-center space-x-2 min-w-max`}
                 >
-                  <badge.icon className="w-5 h-5 text-green-500" />
+                  <badge.icon className="w-5 h-5 text-blue-500" />
                   <span className="text-sm font-medium text-gray-700">{badge.text}</span>
                 </motion.div>
               ))}
@@ -90,7 +90,7 @@ const Hero = () => {
         <div className="lg:hidden flex justify-center mt-8">
           <Button 
             size="lg" 
-            className="bg-green-500 hover:bg-green-600 text-white w-full max-w-xs"
+            className="bg-blue-500 hover:bg-blue-600 text-white w-full max-w-xs"
             onClick={handleContactClick}
           >
             Contact Us
