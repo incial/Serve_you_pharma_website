@@ -90,81 +90,67 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Fullscreen Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isMenuOpen && (
-          <>
-            {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
-              onClick={() => setIsMenuOpen(false)}
-            />
-            
-            {/* Menu Content */}
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-              className="fixed top-0 left-0 right-0 bg-gradient-to-br from-green-500 to-green-600 z-50 md:hidden"
-            >
-              <div className="flex flex-col min-h-screen">
-                {/* Header with close button */}
-                <div className="flex items-center justify-between p-4 pt-16">
-                  <div className="flex items-center space-x-2">
-                    <img 
-                      src="/lovable-uploads/281ba982-2dc8-4315-aae3-5c79a50e15da.png" 
-                      alt="Serve You Pharma Logo" 
-                      className="w-8 h-8"
-                    />
-                    <span className="text-xl font-bold text-white">Serve You Pharma</span>
-                  </div>
-                  
-                  {/* Close button inside menu */}
-                  <button
-                    onClick={() => setIsMenuOpen(false)}
-                    className="p-2 rounded-lg hover:bg-white/10 transition-colors"
-                  >
-                    <X className="w-6 h-6 text-white" />
-                  </button>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-gradient-to-br from-green-500 to-green-600 z-40 md:hidden"
+          >
+            <div className="flex flex-col h-full">
+              {/* Header with logo and close button */}
+              <div className="flex items-center justify-between p-4 pt-16">
+                <div className="flex items-center space-x-2">
+                  <img 
+                    src="/lovable-uploads/281ba982-2dc8-4315-aae3-5c79a50e15da.png" 
+                    alt="Serve You Pharma Logo" 
+                    className="w-8 h-8"
+                  />
+                  <span className="text-xl font-bold text-white">Serve You Pharma</span>
                 </div>
-
-                {/* Navigation Links */}
-                <nav className="flex-1 flex flex-col justify-center items-center space-y-8 px-8">
-                  {menuItems.map((item, index) => (
-                    <motion.button
-                      key={item.name}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 + 0.2 }}
-                      onClick={() => handleMenuClick(item.href)}
-                      className="text-white text-2xl font-medium hover:text-green-100 transition-colors duration-200 w-full text-center py-3"
-                    >
-                      {item.name}
-                    </motion.button>
-                  ))}
-                  
-                  {/* Mobile CTA Button */}
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.7 }}
-                    className="pt-8"
-                  >
-                    <Button 
-                      onClick={() => handleMenuClick('#contact')}
-                      className="bg-white text-green-600 hover:bg-green-50 px-8 py-3 text-lg font-medium"
-                    >
-                      Contact Us
-                    </Button>
-                  </motion.div>
-                </nav>
+                
+                <button
+                  onClick={() => setIsMenuOpen(false)}
+                  className="p-2 rounded-lg hover:bg-white/10 transition-colors"
+                >
+                  <X className="w-6 h-6 text-white" />
+                </button>
               </div>
-            </motion.div>
-          </>
+
+              {/* Navigation Links */}
+              <div className="flex-1 flex flex-col justify-center px-8 space-y-8">
+                {menuItems.map((item, index) => (
+                  <motion.button
+                    key={item.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 + 0.2 }}
+                    onClick={() => handleMenuClick(item.href)}
+                    className="text-white text-2xl font-medium hover:text-green-100 transition-colors duration-200 text-center py-4"
+                  >
+                    {item.name}
+                  </motion.button>
+                ))}
+                
+                {/* Mobile CTA Button */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.7 }}
+                  className="pt-8 flex justify-center"
+                >
+                  <Button 
+                    onClick={() => handleMenuClick('#contact')}
+                    className="bg-white text-green-600 hover:bg-green-50 px-8 py-3 text-lg font-medium"
+                  >
+                    Contact Us
+                  </Button>
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
         )}
       </AnimatePresence>
     </header>
