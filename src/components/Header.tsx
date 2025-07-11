@@ -101,7 +101,7 @@ const Header = () => {
             style={{ minHeight: '100vh', minWidth: '100vw' }}
           >
             <div className="flex flex-col h-full w-full">
-              {/* Header with logo and close button */}
+              {/* Header with logo only - removed duplicate close button */}
               <div className="flex items-center justify-between p-4 pt-4 mt-12">
                 <div className="flex items-center space-x-2">
                   <img 
@@ -111,13 +111,6 @@ const Header = () => {
                   />
                   <span className="text-xl font-bold text-white">Serve You Pharma</span>
                 </div>
-                
-                <button
-                  onClick={() => setIsMenuOpen(false)}
-                  className="p-2 rounded-lg hover:bg-white/10 transition-colors"
-                >
-                  <X className="w-6 h-6 text-white" />
-                </button>
               </div>
 
               {/* Navigation Links */}
