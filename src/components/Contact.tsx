@@ -8,17 +8,17 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Our Address',
-      details: ['123 Pharma Street', 'Medical District, City 12345'],
+      details: ['MADATHIL BUILDING, 26TH MILE', 'Kanjirappally, Kerala 686518'],
     },
     {
       icon: Phone,
       title: 'Phone Number',
-      details: ['+1 (555) 123-4567', '+1 (555) 987-6543'],
+      details: ['+91 7559002727'],
     },
     {
       icon: Mail,
       title: 'Email Address',
-      details: ['info@serveyoupharma.com', 'orders@serveyoupharma.com'],
+      details: ['serveyoupharma@gmail.com'],
     },
   ];
 
@@ -44,7 +44,7 @@ const Contact = () => {
             Communicate with Us
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We're here to help with custom orders, questions, and general support.
+            We're here to help with your health needs, prescriptions, and general support.
           </p>
         </motion.div>
 
@@ -91,16 +91,10 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* Google Maps */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="h-96 rounded-xl overflow-hidden shadow-lg"
-          >
+          {/* Google Maps - Animation removed */}
+          <div className="h-96 rounded-xl overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841584447287!2d-73.98784368459418!3d40.74844097932764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629794729807!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.3968094465113!2d76.811476!3d9.5610207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0635005a89ed6f%3A0xa9c4726d78529861!2sSERVE%20YOU%20PHARMA!5e0!3m2!1sen!2sin!4v1752298483481!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -109,7 +103,7 @@ const Contact = () => {
               referrerPolicy="no-referrer-when-downgrade"
               title="Serve You Pharma Location"
             ></iframe>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
