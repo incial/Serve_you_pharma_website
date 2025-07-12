@@ -78,14 +78,8 @@ const About = () => {
             </div>
           </motion.div>
 
-          {/* Right Content - Pharmacy Carousel */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="flex justify-center"
-          >
+          {/* Right Content - Pharmacy Carousel (Animation Removed) */}
+          <div className="flex justify-center">
             <div className="relative w-full max-w-md">
               <Carousel className="w-full">
                 <CarouselContent>
@@ -108,7 +102,7 @@ const About = () => {
                 <CarouselNext className="right-2" />
               </Carousel>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Company Description */}
