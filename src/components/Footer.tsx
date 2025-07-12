@@ -17,12 +17,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Pill className="w-8 h-8 text-green-500" />
+              <img 
+                src="/lovable-uploads/281ba982-2dc8-4315-aae3-5c79a50e15da.png" 
+                alt="Serve You Pharma Logo" 
+                className="w-10 h-10"
+              />
               <span className="text-xl font-bold">Serve You Pharma</span>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
-              Your trusted pharmaceutical wholesaler providing quality medicines to pharmacies, 
-              hospitals, and veterinary clinics at competitive prices.
+              Your trusted neighborhood pharmacy providing quality medicines, healthcare products, 
+              and professional pharmaceutical services to our community with care and dedication.
             </p>
           </div>
 
@@ -47,9 +51,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-2 text-gray-400">
-              <p>+1 (555) 123-4567</p>
-              <p>info@serveyoupharma.com</p>
-              <p>123 Pharma Street<br />Medical District, City 12345</p>
+              <p>+91 7559002727</p>
+              <p>serveyoupharma@gmail.com</p>
+              <p>MADATHIL BUILDING, 26TH MILE<br />Kanjirappally, Kerala 686518</p>
             </div>
           </div>
         </div>
