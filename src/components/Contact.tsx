@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram } from 'lucide-react';
+import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   const contactInfo = [
@@ -23,10 +23,21 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { 
+      icon: Instagram, 
+      href: 'https://www.instagram.com/serveyoupharma?igsh=MXBrZWtjYnc0eHNnNg==', 
+      label: 'Instagram' 
+    },
+    { 
+      icon: FaWhatsapp, 
+      href: 'https://wa.me/917559002727', 
+      label: 'WhatsApp' 
+    },
+    {
+      icon:FaFacebook,
+      href: 'https://www.facebook.com/share/19NkbpkFFf/',    
+      label: 'Facebook'
+    }
   ];
 
   return (
@@ -81,6 +92,8 @@ const Contact = () => {
                   <a
                     key={index}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={social.label}
                     className="w-10 h-10 bg-white rounded-lg shadow-sm flex items-center justify-center text-gray-600 hover:text-blue-500 hover:shadow-md transition-all duration-200"
                   >
