@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Target, Eye, Shield } from 'lucide-react';
 import {
@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import useEmblaCarousel from 'embla-carousel-react';
 
 const About = () => {
   const pharmacyImages = [
@@ -32,6 +33,20 @@ const About = () => {
       alt: "Pharmacy Team Serving Customers"
     }
   ];
+
+  const [api, setApi] = useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [api]);
 
   return (
     <section id="about" className="py-12 bg-white">
@@ -81,10 +96,16 @@ const About = () => {
             </div>
           </motion.div>
 
-          {/* Right Content - Pharmacy Carousel (Animation Removed) */}
+          {/* Right Content - Pharmacy Carousel */}
           <div className="flex justify-center">
             <div className="relative w-full max-w-md">
-              <Carousel className="w-full">
+              <Carousel 
+                setApi={setApi}
+                opts={{
+                  loop: true,
+                  align: "start",
+                }}
+              >
                 <CarouselContent>
                   {pharmacyImages.map((image, index) => (
                     <CarouselItem key={index}>
