@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Eye, Shield } from 'lucide-react';
@@ -13,20 +12,24 @@ import {
 const About = () => {
   const pharmacyImages = [
     {
-      src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=400&fit=crop",
+      src: "/about-images/1.jpg",
       alt: "Modern Pharmacy Interior"
     },
     {
-      src: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=500&h=400&fit=crop",
+      src: "/about-images/2.jpg",
       alt: "Pharmacy Shelves with Medications"
     },
     {
-      src: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=500&h=400&fit=crop",
+      src: "/about-images/3.jpg",
       alt: "Pharmacist at Work"
     },
     {
-      src: "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=500&h=400&fit=crop",
+      src: "/about-images/4.jpg",
       alt: "Medical Supplies and Equipment"
+    },
+    {
+      src: "/about-images/5.jpg",
+      alt: "Pharmacy Team Serving Customers"
     }
   ];
 
