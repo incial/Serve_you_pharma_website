@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useKeenSlider } from 'keen-slider/react';
@@ -65,7 +64,7 @@ const Services = () => {
       icon: Sparkles,
       title: 'Cosmetics',
       description: 'Wide selection of beauty and skincare products from trusted brands. Including makeup, skincare essentials, anti-aging products, and dermatologist-recommended cosmetics.',
-      image: '/lovable-uploads/187ab25e-8a12-4eab-ab88-170e6180651a.png',
+      image: '/lovable-uploads/78ad592b-6b1b-4517-adab-71e4f0f178db.png',
     },
     {
       icon: Heart,
