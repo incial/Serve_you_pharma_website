@@ -79,7 +79,9 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Mission</h3>
                   <p className="text-gray-600">
-                    To provide accessible, reliable pharmaceutical care and health services to our community with professional expertise and personalized attention.
+                    To enhance community health by providing high-quality, affordable medications and personalized care. 
+                    We are committed to delivering prescriptions and wellness products accurately and on time, while guiding 
+                    customers with trusted expertise across both modern medicine and traditional remedies.
                   </p>
                 </div>
               </div>
@@ -89,7 +91,9 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Vision</h3>
                   <p className="text-gray-600">
-                    To be the leading community pharmacy, promoting health and wellness through quality pharmaceutical services and trusted healthcare solutions.
+                    To be the most trusted pharmacy in our region, known for compassionate service, clinical excellence, 
+                    and a holistic approach to healing. We envision a seamless pharmacy experience where timely delivery 
+                    and transparent care bring wellness to every household.
                   </p>
                 </div>
               </div>
