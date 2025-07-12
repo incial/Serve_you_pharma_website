@@ -1,30 +1,33 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, User, UserRound } from 'lucide-react';
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'Dr. Sarah Johnson',
-      role: 'Pharmacy Manager',
-      image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop&crop=face',
+      name: 'Arun Josy Thomas',
+      gender: 'male',
       rating: 5,
-      text: 'Their prices are competitive and the customer service is top-notch. Highly recommend for any pharmacy business.',
+      text: 'Always a great experience at Serve you pharma. Friendly staff, fast service, and they truly care about your health. Thank you for being reliable and professional every time.',
     },
     {
-      name: 'Michael Chen',
-      role: 'Hospital Administrator',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
+      name: 'Ann Lilly Jose',
+      gender: 'female',
       rating: 5,
-      text: 'We can always rely on timely delivery and high-quality medicines. Best vendor for emergency supplies.',
+      text: 'Good service. I called at night for urgent medicine and the staff delivered the medicine to my home as soon as I told them. I am very satisfied with their service.',
     },
     {
-      name: 'Dr. Emily Rodriguez',
-      role: 'Veterinary Clinic Owner',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616c4e3e90b?w=100&h=100&fit=crop&crop=face',
+      name: 'Akhil Mathew Mohan',
+      gender: 'male',
       rating: 5,
-      text: 'Their veterinary medicine selection is excellent and the bulk discounts have helped our clinic significantly.',
+      text: 'Excellent service overall! The staff were friendly and professional, and the home delivery was especially impressive.',
+    },
+    {
+      name: 'Gijo George',
+      gender: 'male',
+      rating: 5,
+      text: 'A pharmacy with dedicated management and staff. Home delivery available on demand. Good experience.',
     },
   ];
 
@@ -40,11 +43,11 @@ const Testimonials = () => {
         >
           <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider">Testimonials</span>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-2 mb-4">
-            This User Opinion Highlights Our Consistent Product Quality
+            What Our Customers Say About Us
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -67,14 +70,15 @@ const Testimonials = () => {
               </div>
 
               <div className="flex items-center">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                  {testimonial.gender === 'female' ? (
+                    <UserRound className="w-6 h-6 text-blue-600" />
+                  ) : (
+                    <User className="w-6 h-6 text-blue-600" />
+                  )}
+                </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-600">{testimonial.role}</p>
                 </div>
               </div>
             </motion.div>
