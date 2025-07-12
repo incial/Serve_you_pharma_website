@@ -45,7 +45,7 @@ const About = () => {
             <div className="text-center lg:text-left">
               <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider">About Us</span>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-2">
-                What We're All About
+                Your Trusted Healthcare Partner
               </h2>
             </div>
 
@@ -61,7 +61,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Mission</h3>
                   <p className="text-gray-600">
-                    To provide reliable, affordable pharmaceutical solutions with timely delivery and exceptional service.
+                    To provide accessible, reliable pharmaceutical care and health services to our community with professional expertise and personalized attention.
                   </p>
                 </div>
               </div>
@@ -71,7 +71,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Vision</h3>
                   <p className="text-gray-600">
-                    To ensure accessible healthcare for all by being a leading force in pharmaceutical distribution.
+                    To be the leading community pharmacy, promoting health and wellness through quality pharmaceutical services and trusted healthcare solutions.
                   </p>
                 </div>
               </div>
@@ -120,9 +120,10 @@ const About = () => {
           className="mt-10 text-center max-w-4xl mx-auto"
         >
           <p className="text-lg text-gray-600 leading-relaxed">
-            Serve You Pharma is a trusted pharmaceutical wholesaler supplying quality medicines to pharmacies, hospitals, 
-            and veterinary clinics. Our range includes generic, branded, paediatric, and veterinary medications 
-            — all at competitive prices.
+            Serve You Pharma is your neighborhood pharmacy committed to providing exceptional pharmaceutical care. 
+            With our team of qualified pharmacists and healthcare professionals, we offer comprehensive pharmacy services 
+            including prescription medications, health consultations, and a wide range of healthcare products. 
+            We pride ourselves on building lasting relationships with our community through personalized care and trusted expertise.
           </p>
         </motion.div>
       </div>

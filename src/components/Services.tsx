@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
-import { Truck, Package, Settings, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Pill, Baby, Sparkles, Heart, Home, User, Stethoscope, PawPrint, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Services = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -50,22 +50,52 @@ const Services = () => {
 
   const services = [
     {
-      icon: Truck,
-      title: 'Logistics',
-      description: 'We offer extensive delivery networks, including warehouse locations, shipping methods, specialized transportation, and shipping services tailored to your needs.',
-      image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop',
+      icon: Pill,
+      title: 'Prescriptions',
+      description: 'Professional prescription dispensing service with qualified pharmacists. We ensure accurate medication preparation and provide comprehensive drug counseling for safe and effective treatment.',
+      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop',
     },
     {
-      icon: Package,
-      title: 'Bulk Ordering',
-      description: 'Develop and maintain reliable supplier relationships, fair lowest pricing, and minimum bulk discounts available for pharmacies, clinics, and medical facilities.',
-      image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=300&fit=crop',
+      icon: Baby,
+      title: 'Mother and Baby Care',
+      description: 'Complete range of products for mothers and babies including baby formula, diapers, feeding accessories, maternity care items, and specialized infant medications.',
+      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop',
     },
     {
-      icon: Settings,
-      title: 'Custom Solutions',
-      description: 'We only embrace services designed to meet the specific requirements of your business and offer technical solutions and personalized support every step of the way.',
+      icon: Sparkles,
+      title: 'Cosmetics',
+      description: 'Wide selection of beauty and skincare products from trusted brands. Including makeup, skincare essentials, anti-aging products, and dermatologist-recommended cosmetics.',
+      image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop',
+    },
+    {
+      icon: Heart,
+      title: 'Health & Wellness',
+      description: 'Comprehensive health monitoring services, vitamin supplements, nutritional products, and wellness consultations to help maintain your optimal health.',
       image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop',
+    },
+    {
+      icon: Home,
+      title: 'Home Health Care',
+      description: 'Essential home healthcare supplies including wound care products, mobility aids, home diagnostic kits, and medical devices for comfortable home treatment.',
+      image: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=400&h=300&fit=crop',
+    },
+    {
+      icon: User,
+      title: 'Personal Care',
+      description: 'Daily personal care essentials including hygiene products, oral care, hair care, skin care, and specialty items for maintaining personal health and comfort.',
+      image: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&h=300&fit=crop',
+    },
+    {
+      icon: Stethoscope,
+      title: 'Medical Equipment',
+      description: 'Quality medical equipment and devices including blood pressure monitors, thermometers, glucose meters, nebulizers, and other diagnostic instruments.',
+      image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=300&fit=crop',
+    },
+    {
+      icon: PawPrint,
+      title: 'Veterinary',
+      description: 'Specialized veterinary medications and pet care products. Professional advice for pet health, including prescription medications and over-the-counter pet care supplies.',
+      image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop',
     },
   ];
 
@@ -81,10 +111,10 @@ const Services = () => {
         >
           <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider">Our Services</span>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-2 mb-4">
-            Discover the Solutions We Offer
+            Complete Pharmacy Services
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Comprehensive pharmaceutical distribution services designed to meet all your medical supply needs.
+            Your trusted neighborhood pharmacy providing comprehensive healthcare solutions and professional pharmaceutical services.
           </p>
         </motion.div>
 
