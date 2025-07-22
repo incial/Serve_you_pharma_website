@@ -1,15 +1,15 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Truck, Shield, Clock, Package } from 'lucide-react';
+import { Truck, Shield, Clock, Package, Thermometer, BriefcaseMedical } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   const badges = [
-    { icon: Shield, text: '100% Genuine Product', position: 'top-4 -right-4' },
-    { icon: Truck, text: 'Fast Delivery', position: 'top-20 -left-8' },
-    { icon: Package, text: 'Bulk Ordering', position: 'bottom-8 -right-8' },
-    { icon: Clock, text: '24/7 Support', position: 'bottom-4 -left-4' },
+    { icon: Shield, text: 'Trusted Pharmacy', position: 'top-4 -right-4' },
+    { icon: Truck, text: 'Home Delivery', position: 'top-20 -left-8' },
+    { icon: Thermometer, text: 'Optimum Temperature', position: 'bottom-8 -right-8' },
+    { icon: BriefcaseMedical, text: 'Expert Advice', position: 'bottom-4 -left-4' },
   ];
 
   const handleContactClick = () => {
