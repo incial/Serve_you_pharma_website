@@ -31,9 +31,9 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/281ba982-2dc8-4315-aae3-5c79a50e15da.png" 
+              src="/lovable-uploads/281ba982-2dc8-4315-aae3-5c79a50e15da.webp" 
               alt="Serve You Pharma Logo" 
-              className="w-8 h-8"
+              className="w-8 h-8 rounded-full"
             />
             <span className="text-xl font-bold text-gray-800">Serve You Pharma</span>
           </div>
@@ -102,12 +102,12 @@ const Header = () => {
           >
             <div className="flex flex-col h-full w-full">
               {/* Header with logo only - removed duplicate close button */}
-              <div className="flex items-center justify-between p-4 pt-4 mt-12">
+              <div className="flex items-center justify-between p-4 pt-2 mt-2">
                 <div className="flex items-center space-x-2">
                   <img 
-                    src="/lovable-uploads/281ba982-2dc8-4315-aae3-5c79a50e15da.png" 
+                    src="/lovable-uploads/281ba982-2dc8-4315-aae3-5c79a50e15da.webp" 
                     alt="Serve You Pharma Logo" 
-                    className="w-8 h-8"
+                    className="w-8 h-8 rounded-full"
                   />
                   <span className="text-xl font-bold text-white">Serve You Pharma</span>
                 </div>

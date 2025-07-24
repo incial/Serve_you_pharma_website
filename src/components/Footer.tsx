@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/lovable-uploads/281ba982-2dc8-4315-aae3-5c79a50e15da.png" 
+                src="/lovable-uploads/281ba982-2dc8-4315-aae3-5c79a50e15da.webp" 
                 alt="Serve You Pharma Logo" 
                 className="w-10 h-10"
               />

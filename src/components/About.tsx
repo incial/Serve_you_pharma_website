@@ -13,27 +13,27 @@ import useEmblaCarousel from 'embla-carousel-react';
 const About = () => {
   const pharmacyImages = [
     {
-      src: "/about-images/1.jpg",
+      src: "/about-images/1.webp",
       alt: "Modern Pharmacy Interior"
     },
     {
-      src: "/about-images/2.jpg",
+      src: "/about-images/2.webp",
       alt: "Pharmacy Shelves with Medications"
     },
     {
-      src: "/about-images/3.jpg",
+      src: "/about-images/3.webp",
       alt: "Pharmacist at Work"
     },
     {
-      src: "/about-images/4.jpg",
+      src: "/about-images/4.webp",
       alt: "Medical Supplies and Equipment"
     },
     {
-      src: "/about-images/5.jpg",
+      src: "/about-images/5.webp",
       alt: "Pharmacy Team Serving Customers"
     },
     {
-      src: "/about-images/6.jpg",
+      src: "/about-images/6.webp",
       alt: "Pharmacy Team Serving Customers"
     }
   ];
