@@ -31,6 +31,10 @@ const About = () => {
     {
       src: "/about-images/5.jpg",
       alt: "Pharmacy Team Serving Customers"
+    },
+    {
+      src: "/about-images/6.jpg",
+      alt: "Pharmacy Team Serving Customers"
     }
   ];
 
