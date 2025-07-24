@@ -17,6 +17,8 @@ type CarouselProps = {
   plugins?: CarouselPlugin
   orientation?: "horizontal" | "vertical"
   setApi?: (api: CarouselApi) => void
+  autoPlay?: boolean
+  autoPlayInterval?: number
 }
 
 type CarouselContextProps = {
@@ -52,6 +54,8 @@ const Carousel = React.forwardRef<
       plugins,
       className,
       children,
+      autoPlay = false,
+      autoPlayInterval = 3000,
       ...props
     },
     ref
@@ -65,6 +69,8 @@ const Carousel = React.forwardRef<
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
+    const [isHovered, setIsHovered] = React.useState(false);
+    const [isFocused, setIsFocused] = React.useState(false);
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
@@ -118,6 +124,15 @@ const Carousel = React.forwardRef<
       }
     }, [api, onSelect])
 
+    // AutoPlay logic
+    React.useEffect(() => {
+      if (!api || !autoPlay || isHovered || isFocused) return;
+      const interval = setInterval(() => {
+        api.scrollNext();
+      }, autoPlayInterval || 3000);
+      return () => clearInterval(interval);
+    }, [api, autoPlay, autoPlayInterval, isHovered, isFocused]);
+
     return (
       <CarouselContext.Provider
         value={{
@@ -138,6 +153,11 @@ const Carousel = React.forwardRef<
           className={cn("relative", className)}
           role="region"
           aria-roledescription="carousel"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => setIsFocused(false)}
+          tabIndex={0}
           {...props}
         >
           {children}

@@ -38,20 +38,6 @@ const About = () => {
     }
   ];
 
-  const [api, setApi] = useState<CarouselApi>();
-
-  useEffect(() => {
-    if (!api) {
-      return;
-    }
-
-    const interval = setInterval(() => {
-      api.scrollNext();
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [api]);
-
   return (
     <section id="about" className="py-12 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,7 +94,8 @@ const About = () => {
           <div className="flex justify-center">
             <div className="relative w-full max-w-md">
               <Carousel 
-                setApi={setApi}
+                autoPlay={true}
+                autoPlayInterval={3000}
                 opts={{
                   loop: true,
                   align: "start",
@@ -123,6 +110,7 @@ const About = () => {
                             src={image.src}
                             alt={image.alt}
                             className="w-full h-full object-cover"
+                            loading="lazy"
                           />
                         </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-2xl"></div>
