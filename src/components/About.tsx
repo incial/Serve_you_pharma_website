@@ -136,7 +136,7 @@ const About = () => {
           <p className="text-lg text-gray-600 leading-relaxed">
             Serve You Pharma is your neighborhood pharmacy committed to providing exceptional pharmaceutical care. 
             With our team of qualified pharmacists and healthcare professionals, we offer comprehensive pharmacy services 
-            including prescription medications, health consultations, and a wide range of healthcare products. 
+            including prescription medications, over the counter medicall essentials, and a wide range of healthcare products. 
             We pride ourselves on building lasting relationships with our community through personalized care and trusted expertise.
           </p>
         </motion.div>

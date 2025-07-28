@@ -31,13 +31,11 @@ const Hero = () => {
             className="space-y-6"
           >
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Trusted by{' '}
-              <span className="text-blue-500">Pharmacies</span>{' '}
-              for Consistent Supply
+              Trusted Community Retail <span className="text-blue-500">Pharmacy..</span>Serve With Care always!!!
             </h1>
 
             <p className="text-lg text-gray-600 max-w-xl">
-              "Providing Generic, Branded, Paediatric, and Veterinary Medicines at Affordable Prices."
+              "Providing Branded / Generic Medicines, Medical equipements and wide range of healthcare products at affordable prices at your door step."
             </p>
 
             {/* Contact Us button - hidden on mobile, shown on desktop */}
